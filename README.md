@@ -47,3 +47,4 @@ python src/runner.py
 | Auteur |  description   | dépendences principales ajoutées |
 |:------:|:--------------:|:--------------------------------:|
 |  paq1  | initial commit |                X                 |
+|  paq1  | initial commit |              pygame              |
