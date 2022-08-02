@@ -3,7 +3,7 @@ import pygame
 from pygame.locals import *
 
 from models import TileTextures
-from services.tile_draw_service import TileDrawService
+from services import TileDrawService, MapGeneratorService
 
 
 def game():
@@ -13,6 +13,9 @@ def game():
     width, height = 640, 480
     screen = pygame.display.set_mode((width, height))
     delta_time = 1 / fps
+
+    tilemap = MapGeneratorService.generator_random_map()
+    print(str(tilemap))
 
     tile_textures = TileTextures()
     tile_draw_service = TileDrawService(tile_textures, screen)
